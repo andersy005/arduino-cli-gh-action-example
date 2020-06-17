@@ -18,7 +18,7 @@ jobs:
             fqbn: "esp32:esp32:esp32"
 
           - arduino-platform: "esp8266:esp8266"
-            fqbn: "esp8266:esp8266:esp8266"
+            fqbn: "esp8266:esp8266:generic"
 
     runs-on: ubuntu-latest
 
