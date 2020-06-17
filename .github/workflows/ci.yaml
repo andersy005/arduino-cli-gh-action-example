@@ -29,7 +29,7 @@ jobs:
       - name: Install Platform
         run: |
           arduino-cli core update-index
-          arduino-cli core install ${{ matrix.arduino-platform }} ----config-file arduino-cli-config.yaml
+          arduino-cli core install ${{ matrix.arduino-platform }} --config-file arduino-cli-config.yaml
 
       - name: Compile sketch
         run: |
