@@ -11,11 +11,14 @@ jobs:
   build:
     strategy:
       matrix:
-        arduino-platform: ["esp32:esp32"]
+        arduino-platform: ["esp32:esp32", "esp8266:esp8266"]
 
         include:
           - arduino-platform: "esp32:esp32"
             fqbn: "esp32:esp32:esp32"
+
+          - arduino-platform: "esp8266:esp8266"
+            fqbn: "esp8266:esp8266:esp8266"
 
     runs-on: ubuntu-latest
 
