@@ -26,6 +26,10 @@ jobs:
       - name: Setup Arduino CLI
         uses: arduino/setup-arduino-cli@master
 
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip pyserial
+
       - name: Install Platform
         run: |
           arduino-cli core update-index --verbose
